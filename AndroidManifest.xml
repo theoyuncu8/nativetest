@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.kmkappdeveloper.diyetrehberim"
+    package="com.xxx.xxx"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -22,20 +22,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,InnerclassSeparator,UnusedAttribute"
         tools:targetApi="n">
-        <activity android:name=".NativeTest"></activity>
-        <activity
-            android:name=".UserActivity"
-            android:theme="@style/AppThemeUser" />
-        <activity
-            android:name=".EgzersizlerActivity"
-            android:theme="@style/AppTheme.Transparent" />
-        <activity
-            android:name=".ProfileActivity"
-            android:theme="@style/AppThemeProfile" />
-        <activity android:name=".ErrorActivity" />
-        <activity
-            android:name=".DetailActivity"
-            android:theme="@style/TransparentDetail" />
+        <activity android:name=".NativeTest"></activity> 
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
@@ -64,22 +51,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".EgzersizActivity"
-            android:theme="@style/AppThemeEgzersiz"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name=".TrackerSettingsActivity"
-            android:theme="@style/AppThemeSettings" />
-        <activity
-            android:name=".SuActivity"
-            android:theme="@style/AppTheme.Transparent" />
-        <activity
-            android:name=".ChartActivity"
-            android:theme="@style/AppTheme.Transparent" />
-
-        <receiver android:name=".AlarmReceiver" />
-
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
