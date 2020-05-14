@@ -1,4 +1,4 @@
-package com.kmkappdeveloper.diyetrehberim;
+package com.xxx.xxx;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -34,25 +34,6 @@ public class NativeTest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_native_test);
-
-
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
-
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("937E8476BB3F8765514122528DBCF181")
-                .build();
-
-
-        List<String> testDeviceIds = Arrays.asList("937E8476BB3F8765514122528DBCF181");
-        RequestConfiguration configuration = new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
-        MobileAds.setRequestConfiguration(configuration);
-
 
         AdLoader adLoader = new AdLoader.Builder(context, "ca-app-pub-3940256099942544/2247696110")
                 .forUnifiedNativeAd(new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
