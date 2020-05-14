@@ -54,7 +54,7 @@ public class NativeTest extends AppCompatActivity {
                 })
                 .build();
 
-        adLoader.loadAd(new AdRequest.Builder().build);
+        adLoader.loadAd(new AdRequest.Builder().build());
     }
 
     private void populateUnifiedNativeAdView(UnifiedNativeAd nativeAd, UnifiedNativeAdView adView) {
